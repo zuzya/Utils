@@ -38,5 +38,30 @@ public class PropertiesLoader {
 		
 		return prop;
 	}
+	
+	public static Properties getProperties(InputStream is) {	
+		
+		Properties prop = new Properties();
+		InputStream input = null;
+
+		try {
+
+			// load a properties file
+			prop.load(is);
+
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		return prop;
+	}
 
 }

@@ -30,7 +30,6 @@ public class Serializator {
 			
 			return yourBytes;
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 		  try {
