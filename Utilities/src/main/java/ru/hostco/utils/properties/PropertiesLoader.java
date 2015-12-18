@@ -1,6 +1,7 @@
 package ru.hostco.utils.properties;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -63,5 +64,41 @@ public class PropertiesLoader {
 		
 		return prop;
 	}
+	
+	/**
+	 * 
+	 * @param propertyName
+	 * @return
+	 */
+	public static Properties getSystemProperties(String propertyName) {
+		
+		Properties config = null;
+		
+		if (config == null) {
+			config = new Properties();
+			FileInputStream stream = null;
+			try {
+				String configPath = System.getProperty(propertyName);
+				stream = new FileInputStream(configPath);
+		   		config.load(stream);		   		
+		   		
+//		   	} catch (IOException ioe) {
+//		   		ioe.printStackTrace();
+		    } catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally {
+				if (stream != null)
+					try {
+						stream.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+			}
+			
+		}
+		return config;
+	}	
 
 }
