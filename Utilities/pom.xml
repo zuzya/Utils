@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.hostco</groupId>
   <artifactId>Utilities</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   
   	<build>
 		<plugins>
@@ -45,6 +45,12 @@
 	       <version>4.11</version>
 	       <scope>test</scope>
 	   </dependency>
+	   
+	   	<dependency>
+ 			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		  	<version>3.4</version>
+ 		</dependency>
 	</dependencies>	
  
 </project>

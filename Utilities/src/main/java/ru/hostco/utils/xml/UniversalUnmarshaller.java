@@ -18,7 +18,9 @@ public class UniversalUnmarshaller {
 			throws JAXBException {
 		JAXBContext ctx = JAXBContext.newInstance(clazz);
 		StringWriter sw = new StringWriter();
-		ctx.createMarshaller().marshal(object, sw);
+		Marshaller marshaller = ctx.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		marshaller.marshal(object, sw);
 		return sw.toString();
 	}
 	
