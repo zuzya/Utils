@@ -1,4 +1,4 @@
-package ru.hostco.utils.properties;
+п»їpackage ru.hostco.utils.properties;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,7 +9,7 @@ import java.util.Properties;
 public class PropertiesLoader {
 
 	/**
-	 * Читает файлик пропертей
+	 * Р§РёС‚Р°РµС‚ С„Р°Р№Р»РёРє РїСЂРѕРїРµСЂС‚РµР№
 	 * 
 	 * @param path
 	 * @return

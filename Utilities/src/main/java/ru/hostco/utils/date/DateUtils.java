@@ -1,4 +1,4 @@
-package ru.hostco.utils.date;
+п»їpackage ru.hostco.utils.date;
 
 import java.text.DateFormatSymbols;
 import java.text.ParseException;
@@ -67,8 +67,8 @@ public class DateUtils {
 
         @Override
         public String[] getMonths() {
-            return new String[]{"января", "февраля", "марта", "апреля", "мая", "июня",
-                "июля", "августа", "сентября", "октября", "ноября", "декабря"};
+            return new String[]{"СЏРЅРІР°СЂСЏ", "С„РµРІСЂР°Р»СЏ", "РјР°СЂС‚Р°", "Р°РїСЂРµР»СЏ", "РјР°СЏ", "РёСЋРЅСЏ",
+                "РёСЋР»СЏ", "Р°РІРіСѓСЃС‚Р°", "СЃРµРЅС‚СЏР±СЂСЏ", "РѕРєС‚СЏР±СЂСЏ", "РЅРѕСЏР±СЂСЏ", "РґРµРєР°Р±СЂСЏ"};
         }
         
     };

@@ -1,11 +1,11 @@
-package ru.hostco.utils.bytes.test;
+п»їpackage ru.hostco.utils.bytes.test;
 
 import java.io.Serializable;
 
 public class DataBlock implements Serializable{
 
 	/*
-	 * Битовые поля
+	 * Р‘РёС‚РѕРІС‹Рµ РїРѕР»СЏ
 	 */
 	private boolean DBX00;
 	private boolean DBX01;
@@ -30,7 +30,7 @@ public class DataBlock implements Serializable{
 	private int DBI01;	
 	private int DBI02;
 	
-	//значение веса
+	//Р·РЅР°С‡РµРЅРёРµ РІРµСЃР°
 	private double DBW10;
 	
 	

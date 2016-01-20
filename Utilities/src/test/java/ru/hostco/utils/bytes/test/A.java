@@ -1,4 +1,4 @@
-package ru.hostco.utils.bytes.test;
+﻿package ru.hostco.utils.bytes.test;
 
 import java.io.Serializable;
 

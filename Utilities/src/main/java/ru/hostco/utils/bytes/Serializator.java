@@ -1,4 +1,4 @@
-package ru.hostco.utils.bytes;
+п»їpackage ru.hostco.utils.bytes;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -11,7 +11,7 @@ import java.io.ObjectOutputStream;
 public class Serializator {
 
 	/**
-	 * Создает массив байтов из объекта
+	 * РЎРѕР·РґР°РµС‚ РјР°СЃСЃРёРІ Р±Р°Р№С‚РѕРІ РёР· РѕР±СЉРµРєС‚Р°
 	 * 
 	 * @param obj
 	 * @return
@@ -49,7 +49,7 @@ public class Serializator {
 	}
 	
 	/**
-	 * Пытаемся создать объект из массива байтов
+	 * РџС‹С‚Р°РµРјСЃСЏ СЃРѕР·РґР°С‚СЊ РѕР±СЉРµРєС‚ РёР· РјР°СЃСЃРёРІР° Р±Р°Р№С‚РѕРІ
 	 * 
 	 * @param bytes
 	 * @return

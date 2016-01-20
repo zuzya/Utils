@@ -1,4 +1,4 @@
-package ru.hostco.utils.properties;
+п»їpackage ru.hostco.utils.properties;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -9,7 +9,7 @@ import ru.hostco.plc.client.exceptions.InitializationPropertiesException;
 public class Validator {
 
 	/**
-	 * Валидация пропертей
+	 * Р’Р°Р»РёРґР°С†РёСЏ РїСЂРѕРїРµСЂС‚РµР№
 	 * 
 	 * @param props
 	 * @throws InitializationPropertiesException 

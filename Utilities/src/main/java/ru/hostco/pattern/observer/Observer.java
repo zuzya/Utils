@@ -1,4 +1,4 @@
-package ru.hostco.pattern.observer;
+﻿package ru.hostco.pattern.observer;
 
 public interface Observer {
 

@@ -1,4 +1,4 @@
-package ru.hostco.utils.arrays.test;
+﻿package ru.hostco.utils.arrays.test;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package ru.hostco.pattern.observer;
+п»їpackage ru.hostco.pattern.observer;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,7 +31,7 @@ public class MessageSender implements Observer{
 
 
 	/**
-	 * Показать текущее состояние
+	 * РџРѕРєР°Р·Р°С‚СЊ С‚РµРєСѓС‰РµРµ СЃРѕСЃС‚РѕСЏРЅРёРµ
 	 */
 	private void display() {
 		

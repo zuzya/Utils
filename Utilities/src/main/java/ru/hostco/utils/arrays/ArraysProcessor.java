@@ -1,4 +1,4 @@
-package ru.hostco.utils.arrays;
+﻿package ru.hostco.utils.arrays;
 
 import org.apache.commons.lang3.ArrayUtils;
 
