@@ -1,4 +1,4 @@
-﻿package ru.hostco.utils.xml;
+package ru.hostco.utils.xml;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

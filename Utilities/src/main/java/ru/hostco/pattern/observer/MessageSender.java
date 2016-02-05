@@ -1,4 +1,4 @@
-﻿package ru.hostco.pattern.observer;
+package ru.hostco.pattern.observer;
 
 import java.io.IOException;
 import java.util.ArrayList;

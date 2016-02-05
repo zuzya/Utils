@@ -1,4 +1,4 @@
-﻿package ru.hostco.utils.properties;
+package ru.hostco.utils.properties;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

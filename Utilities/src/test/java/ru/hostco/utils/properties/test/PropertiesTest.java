@@ -1,4 +1,4 @@
-﻿package ru.hostco.utils.properties.test;
+package ru.hostco.utils.properties.test;
 
 import java.util.Properties;
 

@@ -1,17 +1,7 @@
-﻿package ru.hostco.utils.bytes.test;
+package ru.hostco.utils.bytes.test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import static org.junit.Assert.assertTrue;
 
-import static org.junit.Assert.*;
-
-import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import ru.hostco.utils.bytes.Serializator;

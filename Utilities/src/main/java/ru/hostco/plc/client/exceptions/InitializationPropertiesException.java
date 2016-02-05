@@ -1,4 +1,4 @@
-﻿package ru.hostco.plc.client.exceptions;
+package ru.hostco.plc.client.exceptions;
 
 import java.io.IOException;
 

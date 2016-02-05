@@ -1,8 +1,10 @@
-﻿package ru.hostco.utils.date;
+package ru.hostco.utils.date;
 
 import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -14,6 +16,7 @@ public class DateUtils {
 
 	
 	/**
+	 * Возвращает текущую дату в виде XMLGregorianCalendar
 	 * 
 	 * @return
 	 * @throws DatatypeConfigurationException
@@ -27,6 +30,21 @@ public class DateUtils {
 		XMLGregorianCalendar now = datatypeFactory
 				.newXMLGregorianCalendar(gregorianCalendar);
 		return now;
+	}
+	
+	
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 * @throws DatatypeConfigurationException
+	 */
+	public static Date getDateFromXMLCalendar(XMLGregorianCalendar xmlDate) throws DatatypeConfigurationException {
+		
+		if(xmlDate == null)
+			return null;
+		Date date = xmlDate.toGregorianCalendar().getTime();
+		return date;
 	}
 	
 	/**
@@ -47,6 +65,22 @@ public class DateUtils {
 		return now;
 	}
 	
+	
+	/**
+	 * 
+	 * 
+	 * @param localdate
+	 * @return
+	 * @throws DatatypeConfigurationException
+	 */
+	public static XMLGregorianCalendar getXMLDateFromParam(LocalDateTime localdate) throws DatatypeConfigurationException {
+				
+		DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
+		XMLGregorianCalendar now = datatypeFactory
+				.newXMLGregorianCalendar(localdate.toString());
+		return now;
+	}
+	
 	/**
 	 * 
 	 * @param sdate
@@ -63,6 +97,27 @@ public class DateUtils {
 
 	}
 	
+	/**
+	 * 
+	 * @param sdate
+	 * @param formatter
+	 * @return
+	 * @throws DatatypeConfigurationException
+	 * @throws ParseException
+	 */
+	public static XMLGregorianCalendar getXMLDateFromStringParam(String sdate, DateTimeFormatter formatter)
+			throws DatatypeConfigurationException, ParseException {
+		
+		
+		LocalDateTime dateTime = LocalDateTime.parse(sdate, formatter);		
+		return getXMLDateFromParam(dateTime);
+
+	}
+	
+	
+	/**
+	 * 
+	 */
 	public static DateFormatSymbols dateFormatSymbolsRussian = new DateFormatSymbols(){
 
         @Override
